@@ -1,0 +1,6 @@
+name = "resume-site"
+compatibility_date = "2026-01-30"
+
+[assets]
+directory = "."
+not_found_handling = "single-page-application"
