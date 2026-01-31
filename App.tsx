@@ -3,6 +3,7 @@ import SiteHeader from './components/SiteHeader';
 import ResumeHeader from './components/ResumeHeader';
 import Section from './components/Section';
 import ExperienceItem from './components/ExperienceItem';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   // Calculate dynamic years of experience
@@ -24,30 +25,29 @@ const App: React.FC = () => {
     <>
       <SiteHeader />
       
-      <main className="max-w-[720px] mx-auto px-6 py-10 pb-16 print:max-w-none print:p-0 print:font-serif">
+      <main className="max-w-[720px] mx-auto px-6 py-12 pb-16 print:max-w-none print:p-0 print:font-serif">
         <ResumeHeader />
 
         <Section title="Summary">
-          <p className="text-[1.05rem] leading-relaxed text-[#444] print:text-[10pt]">
+          <p className="text-[1.05rem] leading-relaxed text-subtext print:text-[10pt] print:leading-snug">
             Operations & Strategy Lead and Senior Salesforce Architect with <span id="years-experience">{experienceYears}</span> of experience in digital transformation. I specialize in translating complex business requirements into high-compliance, scalable technical roadmaps. My focus lies in Site Reliability Engineering (SRE), reducing "tech debt," and maximizing platform ROI for global insurers, US State Governments, and mission-driven organizations.
           </p>
         </Section>
 
         <Section title="Technical Skills">
-          <ul className="flex flex-wrap gap-y-2 list-none p-0 m-0">
-            <li className="w-full text-[0.95rem] text-[#444] print:text-[10pt]">
-              <strong className="text-primary mr-1">Platforms & Cloud:</strong> Salesforce (Architect/Dev), Wix (Velo/CMS), Azure, AWS, Docker, Copado
-            </li>
-            <li className="w-full text-[0.95rem] text-[#444] print:text-[10pt]">
-              <strong className="text-primary mr-1">Development:</strong> Apex, LWC, JavaScript, .Net, Java, SQL, HTML/CSS, REST/SOAP APIs
-            </li>
-            <li className="w-full text-[0.95rem] text-[#444] print:text-[10pt]">
-              <strong className="text-primary mr-1">Compliance & Ops:</strong> GDPR, HIPAA, SRE Principles, DevOps, Project Governance
-            </li>
-            <li className="w-full text-[0.95rem] text-[#444] print:text-[10pt]">
-              <strong className="text-primary mr-1">Architecture:</strong> System Integration, Data Modeling, License Minimization, Multi-tenant Architecture
-            </li>
-          </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-y-3 gap-x-4">
+            <div className="text-[0.9rem] font-semibold text-primary print:text-[10pt] print:w-auto">Platforms & Cloud</div>
+            <div className="text-[0.95rem] text-subtext print:text-[10pt]">Salesforce (Architect/Dev), Wix (Velo/CMS), Azure, AWS, Docker, Copado</div>
+            
+            <div className="text-[0.9rem] font-semibold text-primary print:text-[10pt]">Development</div>
+            <div className="text-[0.95rem] text-subtext print:text-[10pt]">Apex, LWC, JavaScript, .Net, Java, SQL, HTML/CSS, REST/SOAP APIs</div>
+            
+            <div className="text-[0.9rem] font-semibold text-primary print:text-[10pt]">Compliance & Ops</div>
+            <div className="text-[0.95rem] text-subtext print:text-[10pt]">GDPR, HIPAA, SRE Principles, DevOps, Project Governance</div>
+            
+            <div className="text-[0.9rem] font-semibold text-primary print:text-[10pt]">Architecture</div>
+            <div className="text-[0.95rem] text-subtext print:text-[10pt]">System Integration, Data Modeling, License Minimization, Multi-tenant Architecture</div>
+          </div>
         </Section>
 
         <Section title="Professional Experience">
@@ -104,6 +104,20 @@ const App: React.FC = () => {
           </ExperienceItem>
         </Section>
 
+        <Section title="Education & Certifications">
+          <ul className="list-none m-0 p-0 space-y-3 print:space-y-1">
+            <li className="text-[0.95rem] text-subtext print:text-[10pt]">
+              <strong className="text-primary font-semibold">University of Limerick</strong> — Higher Diploma in Software Development (1.1 Equiv)
+            </li>
+            <li className="text-[0.95rem] text-subtext print:text-[10pt]">
+              <strong className="text-primary font-semibold">University of Limerick</strong> — Bachelor’s Degree in Energy Science with Markets
+            </li>
+            <li className="text-[0.95rem] text-subtext print:text-[10pt]">
+              <strong className="text-primary font-semibold">Certifications:</strong> Salesforce Data Architect, Platform Developer 1, OmniStudio Consultant, Salesforce Admin
+            </li>
+          </ul>
+        </Section>
+
         <Section title="Leadership & Ventures">
           <ExperienceItem 
             role="CEO & Founder" 
@@ -116,6 +130,8 @@ const App: React.FC = () => {
           </ExperienceItem>
         </Section>
       </main>
+      
+      <Footer />
     </>
   );
 };
