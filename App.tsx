@@ -25,7 +25,8 @@ const App: React.FC = () => {
     <div className="flex flex-col min-h-screen bg-background">
       <SiteHeader />
       
-      <main className="flex-grow w-full max-w-[720px] mx-auto px-6 py-12 pb-16 print:max-w-none print:p-0 print:font-serif">
+      {/* Explicit opacity-100 to ensure visibility */}
+      <main className="flex-grow w-full max-w-[720px] mx-auto px-6 py-12 pb-16 opacity-100 print:max-w-none print:p-0 print:font-serif">
         <ResumeHeader />
 
         <Section title="Summary">
