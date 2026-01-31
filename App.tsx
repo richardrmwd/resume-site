@@ -25,7 +25,7 @@ const App: React.FC = () => {
     <>
       <SiteHeader />
       
-      <main className="max-w-[720px] mx-auto px-6 py-12 pb-16 opacity-0 animate-[fadeIn_0.5s_ease-out_0.2s_forwards] print:max-w-none print:p-0 print:font-serif print:opacity-100 print:animate-none">
+      <main className="max-w-[720px] mx-auto px-6 py-12 pb-16 print:max-w-none print:p-0 print:font-serif">
         <ResumeHeader />
 
         <Section title="Summary">
