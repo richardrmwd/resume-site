@@ -1,6 +1,7 @@
-name = "resume-site"
-compatibility_date = "2026-01-30"
+name = "richard-daly-resume"
+compatibility_date = "2024-11-01"
 
+# CRITICAL FIX: Point to the 'dist' folder where Vite builds the site
 [assets]
-directory = "."
+directory = "./dist"
 not_found_handling = "single-page-application"
