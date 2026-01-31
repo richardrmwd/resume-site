@@ -1,4 +1,4 @@
-name = "richard-daly-resume"
+name = 'resume-site'
 compatibility_date = "2024-11-01"
 
 # CRITICAL FIX: Point to the 'dist' folder where Vite builds the site
