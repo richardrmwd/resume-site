@@ -3,7 +3,7 @@ import SiteHeader from './components/SiteHeader';
 import ResumeHeader from './components/ResumeHeader';
 import Section from './components/Section';
 import ExperienceItem from './components/ExperienceItem';
-import Footer from './components/Footer';
+import SiteFooter from './components/SiteFooter';
 
 const App: React.FC = () => {
   // Calculate dynamic years of experience
@@ -131,7 +131,7 @@ const App: React.FC = () => {
         </Section>
       </main>
       
-      <Footer />
+      <SiteFooter />
     </>
   );
 };
