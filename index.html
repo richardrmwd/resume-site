@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Richard Daly | Operations & Strategy Lead</title>
+  
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Operations & Strategy Lead and Senior Salesforce Architect specializing in SRE, digital transformation, and high-compliance technical roadmaps." />
+  <meta property="og:title" content="Richard Daly | Operations & Strategy Lead" />
+  <meta property="og:description" content="Senior Salesforce Architect & Operations Lead. Specializing in digital transformation and SRE." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="favicon.svg" />
+  
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,15 +26,24 @@
             serif: ['Georgia', '"Times New Roman"', 'serif'],
           },
           colors: {
-            background: '#faf9f7',
-            primary: '#1a1a1a',
+            background: '#ffffff',
+            primary: '#171717',
             link: '#2563eb',
-            meta: '#888888',
-            subtext: '#555555',
-            'border-light': '#e8e6e3',
+            meta: '#737373',
+            subtext: '#525252',
+            'border-light': '#f3f4f6',
           },
           screens: {
             'print': {'raw': 'print'},
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.6s ease-out forwards',
           }
         }
       }
@@ -39,7 +56,7 @@
         print-color-adjust: exact;
       }
       @page {
-        margin: 0.35in 0.5in;
+        margin: 0.5in 0.5in;
       }
     }
   </style>
@@ -52,10 +69,8 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-background print:bg-white text-primary font-sans antialiased min-h-screen selection:bg-blue-100 selection:text-blue-900">
+<body class="bg-background print:bg-white text-primary font-sans antialiased min-h-screen selection:bg-neutral-100 selection:text-black">
   <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
